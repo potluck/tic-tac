@@ -1,0 +1,25 @@
+.row {
+  display: inline-table;
+}
+
+.boards{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  td {
+    padding: 15px;
+    border: 3px solid #1c1c1c; 
+    &:global(.top) {
+      border-top: 0;
+    }
+    &:global(.left) {
+      border-left: 0;
+    }
+    &:global(.right) {
+      border-right: 0;
+    }
+    &:global(.bottom) {
+      border-bottom: 0;
+    }
+  }
+}

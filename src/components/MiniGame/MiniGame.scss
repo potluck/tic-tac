@@ -1,0 +1,33 @@
+.square {
+  position: relative;
+}
+
+.board {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  td {
+  	border: 3px solid #1c1c1c; 
+  	width: 40px;
+  	height: 40px;
+  	&:global(.left) {
+  		border-left: 0;
+  	}
+  	&:global(.top) {
+  		border-top: 0;
+  	}
+  	&:global(.bottom) {
+  		border-bottom: 0;
+  	}
+  	&:global(.right) {
+  		border-right: 0;
+  	}
+  }
+}
+
+.winner {
+  position:absolute;
+  color: red;
+  font-size: 248px;
+  margin-top: -30px;
+}

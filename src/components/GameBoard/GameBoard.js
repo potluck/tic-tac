@@ -8,19 +8,64 @@ export const GameBoard = (props) => (
   	<table className={classes.boards}>
   	<tbody>
   		<tr>
-		    <td className='top left'><MiniGame gamePieces={props.pieces[0]}/></td>
-		    <td className='top'><MiniGame gamePieces={props.pieces[1]}/></td>
-		    <td className='top right'><MiniGame gamePieces={props.pieces[2]}/></td>
+		    <td className='top left'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={0}
+	    		/>
+	    	</td>
+		    <td className='top'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={1}
+	    		/>
+	    	</td>
+		    <td className='top right'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={2}
+	    		/>
+	    	</td>
 	    </tr>
   		<tr>
-		    <td className='left'><MiniGame gamePieces={props.pieces[3]}/></td>
-		    <td ><MiniGame gamePieces={props.pieces[4]}/></td>
-		    <td className='right'><MiniGame gamePieces={props.pieces[5]}/></td>
+		    <td className='left'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={3}
+	    		/>
+	    	</td>
+		    <td >
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={4}
+	    		/>
+	    	</td>
+		    <td className='right'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={5}
+	    		/>
+	    	</td>
 	    </tr>
   		<tr>
-		    <td className='bottom left'><MiniGame gamePieces={props.pieces[6]}/></td>
-		    <td className='bottom'><MiniGame gamePieces={props.pieces[7]}/></td>
-		    <td className='bottom right'><MiniGame gamePieces={props.pieces[8]}/></td>
+		    <td className='bottom left'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={6}
+	    		/>
+	    	</td>
+		    <td className='bottom'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={7}
+	    		/>
+	    	</td>
+		    <td className='bottom right'>
+		    	<MiniGame 
+		    		gamePieces={props.pieces}
+		    		count={8}
+	    		/>
+	    	</td>
 	    </tr>
     </tbody>
     </table>
